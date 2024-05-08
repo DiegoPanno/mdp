@@ -24,6 +24,7 @@ body {
     text-align: center;
     margin-top: 3%;
     animation-duration: 6s;
+    text-shadow: 2px 2px 4px rgba(248, 97, 198, 0.6);
     
 }
 
@@ -33,7 +34,7 @@ h2 {
     text-align: center;
     margin-top: 3%;
     animation-duration: 4s;
-    color: rgba(245, 243, 242, 0.989);
-    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.9);
+    color: rgba(252, 254, 254, 0.989);
+    text-shadow: 3px 3px 1px rgba(57, 2, 254, 0.8);
 }
 
