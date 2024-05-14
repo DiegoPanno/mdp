@@ -6,14 +6,20 @@
   
   
 
-body {
+  body {
+    min-height: 100vh; /* Al menos la altura de la ventana visible */
+    margin: 0;
+    padding-bottom: 100px; /* Espacio adicional para el footer */
+    position: relative;
+}
+
+section {
     background-image: url(fondoMarpla.jpg);
     background-repeat: no-repeat;
     background-size: cover; /* Ajusta la imagen para cubrir toda el área del body */
-    background-position: center; /* Centra la imagen en el body */
-    height: 100vh; /* Usa el 100% de la altura de la ventana del navegador */
-    margin: 0;
-    }
+    background-position: center;
+    height: 100vh;
+}    
 
 .titulo {
     color: rgb(23, 23, 23);
@@ -23,18 +29,71 @@ body {
     font-size: 90px;
     text-align: center;
     margin-top: 3%;
-    animation-duration: 6s;
     text-shadow: 2px 2px 4px rgba(248, 97, 198, 0.6);
     
 }
 
-h2 {
+.nombres {
+    
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     text-align: center;
     margin-top: 3%;
-    animation-duration: 4s;
-    color: rgba(252, 254, 254, 0.989);
+    color: rgba(249, 252, 252, 0.989);
     text-shadow: 3px 3px 1px rgba(57, 2, 254, 0.8);
 }
 
+footer {
+    background-color: #005cfc; /* Color de fondo del footer */
+    color: #faf8f8; /* Color del texto del footer */
+    text-align: center; /* Alineación del texto al centro */
+    padding: 20px 0; /* Espaciado interno (arriba y abajo) dentro del footer */
+    position: absolute; /* Posición absoluta para colocar el footer en la parte inferior */
+    bottom: 0; /* Coloca el footer al final de la página */
+    width: 100%; /* Ancho completo del footer */
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.h3-footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+hr {
+    border: none; 
+    height: 1px; 
+    background-color: rgba(6, 6, 6, 0.5); 
+    margin: 20px 0; 
+}
+
+.nav-item {
+    list-style: none;
+    padding-top: 2%;
+    padding-left: 5%;
+    font-family: Arial, Helvetica, sans-serif, serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #060606;
+    background-color: #faf7f7;
+}
+
+.navbar-nav .nav-link,
+.dropdown-menu .dropdown-item {
+    
+    list-style: none;
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    color: black; /* Color de texto para los enlaces */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    
+    background-color: #087afd; /* Color de fondo al pasar el mouse sobre los enlaces */
+}
